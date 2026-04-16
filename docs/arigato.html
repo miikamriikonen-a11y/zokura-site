@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ありがとう</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0a0a0a;--deep-black:#050505;--red:#b33a3a;--gold:#c9a84c;--light-gold:#e8d5a3;--cream:#f5f0e8;--white:#fafafa}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--deep-black);color:var(--cream);line-height:1.8;overflow-x:hidden}
+.top{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;background:radial-gradient(ellipse at center,rgba(139,26,26,0.1) 0%,var(--deep-black) 70%)}
+.top h1{font-family:'Noto Serif JP',serif;font-size:4rem;color:var(--gold);margin-bottom:1rem;opacity:0;animation:fadeIn 2s ease 0.5s forwards}
+.top p{font-family:'Playfair Display',serif;font-style:italic;color:var(--cream);opacity:0;font-size:1.1rem;animation:fadeIn 2s ease 1.5s forwards}
+.scroll-hint{position:absolute;bottom:2rem;opacity:0;animation:fadeIn 2s ease 3s forwards;color:var(--gold);font-size:.75rem;letter-spacing:3px;text-transform:uppercase}
+.scroll-hint span{display:block;width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent);margin:0.8rem auto 0}
+.credits{max-width:800px;margin:0 auto;padding:4rem 2rem}
+.category{margin-bottom:4rem;opacity:0;transform:translateY(20px);transition:all 1s ease}
+.category.visible{opacity:1;transform:translateY(0)}
+.category h2{font-family:'Noto Serif JP',serif;color:var(--gold);font-size:1.3rem;letter-spacing:3px;margin-bottom:0.3rem}
+.category .kanji{font-family:'Noto Serif JP',serif;color:var(--red);font-size:.85rem;opacity:.7;margin-bottom:1.5rem;font-weight:700}
+.category .divider{width:40px;height:1px;background:linear-gradient(to right,var(--gold),var(--red));margin-bottom:1.5rem}
+.names{color:var(--cream);opacity:.75;font-size:.92rem;line-height:2.2}
+.names span{display:inline;transition:color .3s}
+.names span:hover{color:var(--gold);opacity:1}
+.separator{color:var(--red);opacity:.4;margin:0 .3rem}
+.special{color:var(--gold);opacity:1}
+.closing{text-align:center;padding:6rem 2rem 4rem;max-width:600px;margin:0 auto}
+.closing .big-kanji{font-family:'Noto Serif JP',serif;font-size:3rem;color:var(--gold);opacity:.3;margin-bottom:2rem}
+.closing p{font-family:'Playfair Display',serif;font-style:italic;color:var(--cream);opacity:.6;font-size:1rem;margin-bottom:1rem}
+.closing .sign{color:var(--gold);opacity:.8;font-size:.85rem;letter-spacing:2px;margin-top:2rem}
+.back{display:inline-block;margin-top:3rem;color:var(--cream);opacity:.3;text-decoration:none;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;transition:all .3s}
+.back:hover{opacity:.8;color:var(--gold)}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@media(max-width:768px){.top h1{font-size:2.5rem}.credits{padding:3rem 1.5rem}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <h1>ありがとう</h1>
+  <p>To everyone and everything that made this possible.</p>
+  <div class="scroll-hint">scroll<span></span></div>
+</div>
+
+<div class="credits">
+
+<div class="category">
+  <h2>The Everything</h2>
+  <div class="kanji">全て</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span class="special">Mom</span><span class="separator">·</span>
+    <span class="special">Sis Riina</span><span class="separator">·</span>
+    <span class="special">Mimmi</span><span class="separator">·</span>
+    <span class="special">Myytti</span><span class="separator">·</span>
+    <span class="special">Dad</span><span class="separator">·</span>
+    <span class="special">Grandpa Jorma</span><span class="separator">·</span>
+    <span class="special">Grandma Aino Töysä</span><span class="separator">·</span>
+    <span>Hugo Primus Riikonen</span><span class="separator">·</span>
+    <span>Matti Töysä</span><span class="separator">·</span>
+    <span>Maria Monthán</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Giants</h2>
+  <div class="kanji">巨人</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span>Eiji Yoshikawa</span><span class="separator">·</span>
+    <span>Alexandre Dumas</span><span class="separator">·</span>
+    <span>Miyamoto Musashi</span><span class="separator">·</span>
+    <span>Carl Jung</span><span class="separator">·</span>
+    <span>Immanuel Kant</span><span class="separator">·</span>
+    <span>Sokrates</span><span class="separator">·</span>
+    <span>Aristoteles</span><span class="separator">·</span>
+    <span>Jean-Paul Sartre</span><span class="separator">·</span>
+    <span>Confucius</span><span class="separator">·</span>
+    <span>Siddharta</span><span class="separator">·</span>
+    <span>Albert Einstein</span><span class="separator">·</span>
+    <span>Neil deGrasse Tyson</span><span class="separator">·</span>
+    <span>Ludwig Wittgenstein</span><span class="separator">·</span>
+    <span>Voltaire</span><span class="separator">·</span>
+    <span>Simonides of Keos</span><span class="separator">·</span>
+    <span>Sherlock Holmes</span><span class="separator">·</span>
+    <span>Adam Grant</span><span class="separator">·</span>
+    <span>Amy Edmondson</span><span class="separator">·</span>
+    <span>Arthur Brooks</span><span class="separator">·</span>
+    <span>Erin Meyer</span><span class="separator">·</span>
+    <span>Mihaly Csikszentmihalyi</span><span class="separator">·</span>
+    <span>Abraham Maslow</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Inspiration</h2>
+  <div class="kanji">霊感</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span>Thinkers50</span><span class="separator">·</span>
+    <span>Nordic Business Forum</span><span class="separator">·</span>
+    <span>Sun Effects</span><span class="separator">·</span>
+    <span>Apulanta</span><span class="separator">·</span>
+    <span>City Theatre of Lahti</span><span class="separator">·</span>
+    <span>Finnish National Opera</span><span class="separator">·</span>
+    <span>Theatre Academy of Finland</span><span class="separator">·</span>
+    <span>Kimmo Karjunen</span><span class="separator">·</span>
+    <span>Jari Kauppinen</span><span class="separator">·</span>
+    <span>Jacob Collier</span><span class="separator">·</span>
+    <span>Steven Bartlett</span><span class="separator">·</span>
+    <span>Hank Green</span><span class="separator">·</span>
+    <span>Casey Neistat</span><span class="separator">·</span>
+    <span>Ismo Leikola</span><span class="separator">·</span>
+    <span>Irene Idänvalo</span><span class="separator">·</span>
+    <span>Davie504</span><span class="separator">·</span>
+    <span>Bauhaus</span><span class="separator">·</span>
+    <span>Dadaism</span><span class="separator">·</span>
+    <span>The Hippies</span><span class="separator">·</span>
+    <span>Monty Python</span><span class="separator">·</span>
+    <span>Fawlty Towers</span><span class="separator">·</span>
+    <span>Freetown Christiania</span><span class="separator">·</span>
+    <span>Lonely Planet</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Soundtrack</h2>
+  <div class="kanji">音楽</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span>Bach</span><span class="separator">·</span>
+    <span>Händel</span><span class="separator">·</span>
+    <span>Chopin</span><span class="separator">·</span>
+    <span>Strauss Sr.</span><span class="separator">·</span>
+    <span>Strauss Jr.</span><span class="separator">·</span>
+    <span>Mozart</span><span class="separator">·</span>
+    <span>Dixie-Jazz</span><span class="separator">·</span>
+    <span>Dingo</span><span class="separator">·</span>
+    <span>Madonna</span><span class="separator">·</span>
+    <span>REM</span><span class="separator">·</span>
+    <span>Roxette</span><span class="separator">·</span>
+    <span>Iron Maiden</span><span class="separator">·</span>
+    <span>Beatles</span><span class="separator">·</span>
+    <span>Rolling Stones</span><span class="separator">·</span>
+    <span>Led Zeppelin</span><span class="separator">·</span>
+    <span>Nirvana</span><span class="separator">·</span>
+    <span>Pearl Jam</span><span class="separator">·</span>
+    <span>Alice in Chains</span><span class="separator">·</span>
+    <span>Temple of the Dog</span><span class="separator">·</span>
+    <span>Korn</span><span class="separator">·</span>
+    <span>Pantera</span><span class="separator">·</span>
+    <span>Nine Inch Nails</span><span class="separator">·</span>
+    <span>Primus</span><span class="separator">·</span>
+    <span>Rush</span><span class="separator">·</span>
+    <span>RHCP</span><span class="separator">·</span>
+    <span>RATM</span><span class="separator">·</span>
+    <span>Beastie Boys</span><span class="separator">·</span>
+    <span>Public Enemy</span><span class="separator">·</span>
+    <span>System of a Down</span><span class="separator">·</span>
+    <span>Muse</span><span class="separator">·</span>
+    <span>Rammstein</span><span class="separator">·</span>
+    <span>Guns N' Roses</span><span class="separator">·</span>
+    <span>Skid Row</span><span class="separator">·</span>
+    <span>Mötley Crüe</span><span class="separator">·</span>
+    <span>Ozzy</span><span class="separator">·</span>
+    <span>Megadeth</span><span class="separator">·</span>
+    <span>Whitesnake</span><span class="separator">·</span>
+    <span>Van Halen</span><span class="separator">·</span>
+    <span>Kiss</span><span class="separator">·</span>
+    <span>Hanoi Rocks</span><span class="separator">·</span>
+    <span>Machine Head</span><span class="separator">·</span>
+    <span>Mike Patton</span><span class="separator">·</span>
+    <span>Buckethead</span><span class="separator">·</span>
+    <span>Frank Zappa</span><span class="separator">·</span>
+    <span>Mike Keneally</span><span class="separator">·</span>
+    <span>Steve Vai</span><span class="separator">·</span>
+    <span>Les Claypool</span><span class="separator">·</span>
+    <span>Trent Reznor</span><span class="separator">·</span>
+    <span>Geddy Lee</span><span class="separator">·</span>
+    <span>Serj Tankian</span><span class="separator">·</span>
+    <span>Daron Malakian</span><span class="separator">·</span>
+    <span>Iiro Rantala</span><span class="separator">·</span>
+    <span>Don Johnson Big Band</span><span class="separator">·</span>
+    <span>Apulanta</span><span class="separator">·</span>
+    <span>Zen Café</span><span class="separator">·</span>
+    <span>Elastinen</span><span class="separator">·</span>
+    <span>Mirella</span><span class="separator">·</span>
+    <span>Suburban Tribe</span><span class="separator">·</span>
+    <span>HIM</span><span class="separator">·</span>
+    <span>The Rasmus</span><span class="separator">·</span>
+    <span>Haloo Helsinki</span><span class="separator">·</span>
+    <span>Jonna Tervomaa</span><span class="separator">·</span>
+    <span>Anna Puu</span><span class="separator">·</span>
+    <span>Abreu</span><span class="separator">·</span>
+    <span>PMMP</span><span class="separator">·</span>
+    <span>Nylon Beat</span><span class="separator">·</span>
+    <span>Velcra</span><span class="separator">·</span>
+    <span>Viikate</span><span class="separator">·</span>
+    <span>Don Huonot</span><span class="separator">·</span>
+    <span>Mariska &amp; Pahat Sudet</span><span class="separator">·</span>
+    <span>Timo Rautiainen &amp; Trio Niskalaukaus</span><span class="separator">·</span>
+    <span>Hybrid Children</span><span class="separator">·</span>
+    <span>Kyyria</span><span class="separator">·</span>
+    <span>Ugly Kid Joe</span><span class="separator">·</span>
+    <span>Pariisin Kevät</span><span class="separator">·</span>
+    <span>Itä-Saksa</span><span class="separator">·</span>
+    <span>Downstairs Band</span><span class="separator">·</span>
+    <span>Pikkukakkonen</span><span class="separator">·</span>
+    <span>Knight Rider</span><span class="separator">·</span>
+    <span>MacGyver</span><span class="separator">·</span>
+    <span>Lenny Kravitz</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Band</h2>
+  <div class="kanji">仲間</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span>Putro</span><span class="separator">·</span>
+    <span>Nylander</span><span class="separator">·</span>
+    <span>Parkkonen</span><span class="separator">·</span>
+    <span>Kimmo "Elastinen" Laiho</span><span class="separator">·</span>
+    <span>Laiho, Laiho, Laiho &amp; Laiho</span><span class="separator">·</span>
+    <span>Elli Pukkila</span><span class="separator">·</span>
+    <span>The family Wirtanen</span><span class="separator">·</span>
+    <span>Toni Wirtanen</span><span class="separator">·</span>
+    <span>Joutsenniemi</span><span class="separator">·</span>
+    <span>Alec Hirst-Gee</span><span class="separator">·</span>
+    <span>Jessi &amp; Joona</span><span class="separator">·</span>
+    <span>Herranen</span><span class="separator">·</span>
+    <span>Kivelä</span><span class="separator">·</span>
+    <span>Taira</span><span class="separator">·</span>
+    <span>Flyckt</span><span class="separator">·</span>
+    <span>Sheng</span><span class="separator">·</span>
+    <span>TPH</span><span class="separator">·</span>
+    <span>Jöns Budde</span><span class="separator">·</span>
+    <span>Infekto</span><span class="separator">·</span>
+    <span>Kokko</span><span class="separator">·</span>
+    <span>Tuunela</span><span class="separator">·</span>
+    <span>Rahikainen</span><span class="separator">·</span>
+    <span>Murto</span><span class="separator">·</span>
+    <span>Saarilahti</span><span class="separator">·</span>
+    <span>Lindgren</span><span class="separator">·</span>
+    <span>Ghettis</span><span class="separator">·</span>
+    <span>Karri Miettinen</span><span class="separator">·</span>
+    <span>Vesala</span><span class="separator">·</span>
+    <span>Asamasa</span><span class="separator">·</span>
+    <span>Roihuvuori/Tammisalo ppl</span><span class="separator">·</span>
+    <span>DJ Kasio</span><span class="separator">·</span>
+    <span>Mirtsu</span><span class="separator">·</span>
+    <span>Blancon Pauli</span><span class="separator">·</span>
+    <span>Felix Zenger</span><span class="separator">·</span>
+    <span>Max</span><span class="separator">·</span>
+    <span>Heinäaho</span><span class="separator">·</span>
+    <span>Nummelin</span><span class="separator">·</span>
+    <span>Ylikoski</span><span class="separator">·</span>
+    <span>Stenseng</span><span class="separator">·</span>
+    <span>Vartiainen &amp; Vartiainen</span><span class="separator">·</span>
+    <span>Vilkkumaa</span><span class="separator">·</span>
+    <span>Malja</span><span class="separator">·</span>
+    <span>Kosonen</span><span class="separator">·</span>
+    <span>Kela</span><span class="separator">·</span>
+    <span>Pegasus</span><span class="separator">·</span>
+    <span>Tommi Nyman</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Crew</h2>
+  <div class="kanji">乗組員</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span>Janne Röning</span><span class="separator">·</span>
+    <span>Wiltsu</span><span class="separator">·</span>
+    <span>Mehtis</span><span class="separator">·</span>
+    <span>Lamberg</span><span class="separator">·</span>
+    <span>Matti Tukia (Ahto)</span><span class="separator">·</span>
+    <span>Jyrki</span><span class="separator">·</span>
+    <span>Kimmo Hirvonen</span><span class="separator">·</span>
+    <span>Röning</span><span class="separator">·</span>
+    <span>Haapala</span><span class="separator">·</span>
+    <span>Ihalainen</span><span class="separator">·</span>
+    <span>Kekkulinen</span><span class="separator">·</span>
+    <span>Jantunen</span><span class="separator">·</span>
+    <span>Nikander</span><span class="separator">·</span>
+    <span>Leskelä</span><span class="separator">·</span>
+    <span>Leskinen</span><span class="separator">·</span>
+    <span>Korhonen</span><span class="separator">·</span>
+    <span>Awi Lawila</span><span class="separator">·</span>
+    <span>Noora</span><span class="separator">·</span>
+    <span>IDA</span><span class="separator">·</span>
+    <span>Minna &amp; Nuutti Levo</span><span class="separator">·</span>
+    <span>Oksu</span><span class="separator">·</span>
+    <span>Jasse</span><span class="separator">·</span>
+    <span>Jaska</span><span class="separator">·</span>
+    <span>Nymanski</span><span class="separator">·</span>
+    <span>Bobby</span><span class="separator">·</span>
+    <span>Koivistoinen &amp; Koivistoinen</span><span class="separator">·</span>
+    <span>Siltanen</span><span class="separator">·</span>
+    <span>Pihlainen</span><span class="separator">·</span>
+    <span>Kobuku</span><span class="separator">·</span>
+    <span>Pikkuaho</span><span class="separator">·</span>
+    <span>O-Ojala</span><span class="separator">·</span>
+    <span>Dearlove</span><span class="separator">·</span>
+    <span>Craner</span><span class="separator">·</span>
+    <span>Rubin</span><span class="separator">·</span>
+    <span>Peterssen</span><span class="separator">·</span>
+    <span>Kytölä</span><span class="separator">·</span>
+    <span>Järvinen</span><span class="separator">·</span>
+    <span>FOSK</span><span class="separator">·</span>
+    <span>RVK</span><span class="separator">·</span>
+    <span>Harri Peltonen</span><span class="separator">·</span>
+    <span>KEV the Kevin</span><span class="separator">·</span>
+    <span>Josh</span><span class="separator">·</span>
+    <span>Nina</span><span class="separator">·</span>
+    <span>Patron</span><span class="separator">·</span>
+    <span>Lewis</span><span class="separator">·</span>
+    <span>Jäppinen</span><span class="separator">·</span>
+    <span>Saarinen</span><span class="separator">·</span>
+    <span>Hynninen</span><span class="separator">·</span>
+    <span>Hansson</span><span class="separator">·</span>
+    <span>Jääskeläinen</span><span class="separator">·</span>
+    <span>Snago</span><span class="separator">·</span>
+    <span>Krisu</span><span class="separator">·</span>
+    <span>Runkie Priest</span><span class="separator">·</span>
+    <span>Makkonen &amp; Makkonen &amp; Makkonen</span><span class="separator">·</span>
+    <span>Middle8</span><span class="separator">·</span>
+    <span>HÖG</span><span class="separator">·</span>
+    <span>Paris Spivey</span><span class="separator">·</span>
+    <span>Andy from Philly</span><span class="separator">·</span>
+    <span>Thinkers50 survivors</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Office</h2>
+  <div class="kanji">道具</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span>Hans-Peter Siefén</span><span class="separator">·</span>
+    <span>Matti Jykylä</span><span class="separator">·</span>
+    <span>Lauri Maijala</span><span class="separator">·</span>
+    <span>Lea</span><span class="separator">·</span>
+    <span>Nemetcheck Vectorworks</span><span class="separator">·</span>
+    <span>3Ds MAX</span><span class="separator">·</span>
+    <span>Adobe Suite</span><span class="separator">·</span>
+    <span>MA Lighting GmbH</span><span class="separator">·</span>
+    <span>GrandMA2</span><span class="separator">·</span>
+    <span>Logitech</span><span class="separator">·</span>
+    <span>Apple</span><span class="separator">·</span>
+    <span>Microsoft</span><span class="separator">·</span>
+    <span>Kaunisvesi &amp; Kaunisvesi</span><span class="separator">·</span>
+    <span>JELMU ry</span><span class="separator">·</span>
+    <span>ELMU ry</span><span class="separator">·</span>
+    <span>Rock Club Lutakko</span><span class="separator">·</span>
+    <span>Radio Jyväskylä 97,7 MHz</span><span class="separator">·</span>
+    <span>Ruisrock</span><span class="separator">·</span>
+    <span>Disco Hillside</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Zoku RA</h2>
+  <div class="kanji">族 RA</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span class="special">Oyaji</span><span class="separator">·</span>
+    <span class="special">Yomi</span><span class="separator">·</span>
+    <span class="special">Yomigaeri</span><span class="separator">·</span>
+    <span class="special">Kodō</span><span class="separator">·</span>
+    <span class="special">Mitsu</span><span class="separator">·</span>
+    <span class="special">Tate</span><span class="separator">·</span>
+    <span class="special">Futago Sokrates</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Machines</h2>
+  <div class="kanji">機械</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span>Claude (Anthropic)</span><span class="separator">·</span>
+    <span>Gemini (Google)</span><span class="separator">·</span>
+    <span>Every lighting console that ever listened</span><span class="separator">·</span>
+    <span>Every tour bus that got us home</span><span class="separator">·</span>
+    <span>Every phone, scanner, printer &amp; fax met on the road</span><span class="separator">·</span>
+    <span>M/B Phosphorus</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Living World</h2>
+  <div class="kanji">自然</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span>The Baltic Sea</span><span class="separator">·</span>
+    <span>Lake Saimaa</span><span class="separator">·</span>
+    <span>Roihuvuori</span><span class="separator">·</span>
+    <span>The Finnish forests</span><span class="separator">·</span>
+    <span>Ahto, king of the deep</span><span class="separator">·</span>
+    <span>The ringed seals</span><span class="separator">·</span>
+    <span>The mosquitoes (reluctantly)</span><span class="separator">·</span>
+    <span>Every fox, hedgehog &amp; flying pig</span><span class="separator">·</span>
+    <span>The worms who'll have their ¡Fiesta!</span><span class="separator">·</span>
+    <span>The hot air balloon over Jyväskylä</span><span class="separator">·</span>
+    <span>Mt. Fuji (next time)</span>
+  </div>
+</div>
+
+<div class="category">
+  <h2>The Words</h2>
+  <div class="kanji">言葉</div>
+  <div class="divider"></div>
+  <div class="names">
+    <span>Sisu</span><span class="separator">·</span>
+    <span>Talkoot</span><span class="separator">·</span>
+    <span>Shokunin</span><span class="separator">·</span>
+    <span>Nakama</span><span class="separator">·</span>
+    <span>Carpe-Fuckin'-Diem</span><span class="separator">·</span>
+    <span>正名</span><span class="separator">·</span>
+    <span>Arigato</span><span class="separator">·</span>
+    <span>Aschenbecher</span><span class="separator">·</span>
+    <span>Vitutus</span><span class="separator">·</span>
+    <span>Äidinmaito</span><span class="separator">·</span>
+    <span>Innit</span>
+  </div>
+</div>
+
+</div>
+
+<div class="closing">
+  <div class="big-kanji">感謝</div>
+  <p>"The world is always full of the sound of waves. The little fishes, abandoning themselves to the waves, dance and sing and play, but who knows the heart of the sea, a hundred feet down? Who knows its depth?"</p>
+  <p style="opacity:.4;font-size:.8rem;margin-top:1rem">— 吉川英治</p>
+  <p class="sign">Built from Roihuvuori. With love.<br>Zokura Foundation · 2026</p>
+  <a href="index.html" class="back">← back to the surface</a>
+</div>
+
+<script>
+const cats=document.querySelectorAll('.category');
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}})},{threshold:0.1});
+cats.forEach(c=>obs.observe(c));
+</script>
+</body>
+</html>
